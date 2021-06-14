@@ -33,7 +33,7 @@ if (msg.startsWith(".주사위 ")) {
     replier.reply("[결과]\n"+Sum_arr.join("+") + " = " + Sum);
     Sum_arr = [];
     Sum = 0;
-  } else if (Count > 0 && Count < 1001) {
+  } else if (Count > 0 && Count < 1001) { //1000개 
     for (i=0; i<Count; i++) {
       Random = Math.floor(Math.random()*6);
       Dice_arr.push(Dice[Random]);
